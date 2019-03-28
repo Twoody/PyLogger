@@ -18,6 +18,15 @@ Setup [Unix/Linux]:
 
 	__init__.py and import_handler.py examples in /resources/examples/
 
+	Setup path for `/USERS/tannerleewoody/` necessary modification in ~/.pylog/config.ini
+	Setup path for `/USERS/tannerleewoody/` necessary modification in ~/.pylog/resources/examples/import_handler.py
+		Mods should articulate a path you can `cd` too...
+
+	Testing:
+		1.	Make a few LOGGER.info('foo') calls in bar.py;
+		2. python3 bar.py
+		3. vim ~/.pylog/logs/main.log
+
 Purpose:
 	Properly configure a file for examples of:
 		1. Logging to console.
