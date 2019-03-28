@@ -3,11 +3,22 @@ Author:
 Date:
 	2019-03-27
 
-Purpose:
-	Essentially, in every __init__.py place:
-		import logging
-		logging.getLogger(__name__).addHandler(logging.NullHandler())
+Setup [Unix/Linux]:
+	Initial steps (only needed to be done once):
+		1. mkdir ~/.pylog/
+		2. cd ~/.pylog
+		3. git clone https://github.com/Twoody/PyLogger.git
+		4. mkdir logs
+	In every python FILE:
+		1. touch import_handler.py #IF NOT EXISTS
+		2. from import_hanlder import *
+	In every python MODULE:
+		1. touch __init__.py #IF NOT EXISTS
+		2. from MODULE import * #This goes in every file module is imported from..
 
+	__init__.py and import_handler.py examples in /resources/examples/
+
+Purpose:
 	Properly configure a file for examples of:
 		1. Logging to console.
 		2. Logging to Files.
